@@ -1,7 +1,9 @@
 require 'test_helper'
 
-class ActorsControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class ActorsControllerTest < ActionDispatch::IntegrationTest
+  test "should get actors" do
+    get actors_actors_url
+    assert_response :success
+  end
+
 end
