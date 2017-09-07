@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'actors/'  => 'actors#index'
-  get  'actors/new', to: 'actors#new', as: :new_actors
+  get  'actors/new', to: 'actors#new', as: :new_actor
   post 'actors/' =>  'actors#create'
   
   root 'actors#index'
